@@ -1,0 +1,21 @@
+def sum_of_n_numbers(n):
+    """
+    Calculates the sum of the first n natural numbers.
+    
+    Parameters:
+    n (int): The number of natural numbers to sum.
+    
+    Returns:
+    int: The sum of the first n natural numbers.
+    """
+    sum = 0
+    for i in range(1, n + 1):
+        sum += i
+    return sum
+
+# Example usage:
+n = int(input("Enter a positive integer n: "))
+if n < 0:
+    print("Please enter a positive integer.")
+else:
+    print("Sum of the first", n, "natural numbers is:", sum_of_n_numbers(n))
